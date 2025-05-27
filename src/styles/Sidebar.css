@@ -1,0 +1,97 @@
+/* src/styles/Sidebar.css */
+.sidebar {
+  width: 280px;
+  padding: 24px 16px;
+  background-color: #ffffff;
+  box-shadow: var(--shadow-sm);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.logo-container {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 40px;
+  padding-left: 12px;
+}
+
+.health {
+  color: #333;
+}
+
+.care {
+  color: var(--primary-color);
+}
+
+.sidebar-content {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.sidebar-title {
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--text-muted);
+  margin-bottom: 16px;
+  margin-left: 12px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.tools-title {
+  margin-top: 32px;
+}
+
+.nav-list {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 24px;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  height: 48px;
+  padding: 0 12px;
+  border-radius: 8px;
+  margin-bottom: 4px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.nav-item:hover {
+  background-color: rgba(91, 114, 238, 0.05);
+}
+
+.nav-item.active {
+  background-color: var(--highlight-bg);
+  border-left: 4px solid var(--primary-color);
+  padding-left: 8px;
+}
+
+.nav-item.active .nav-icon {
+  color: var(--primary-color);
+}
+
+.nav-item.active .nav-text {
+  color: var(--primary-color);
+  font-weight: 500;
+}
+
+.nav-icon {
+  color: var(--text-muted);
+  margin-right: 12px;
+}
+
+.nav-text {
+  font-size: 14px;
+  color: var(--text-dark);
+}
+
+.sidebar-footer {
+  margin-top: auto;
+  padding-top: 24px;
+}

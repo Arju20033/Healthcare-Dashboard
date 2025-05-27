@@ -1,0 +1,68 @@
+/* src/styles/Anatomysection.css */
+
+
+.anatomy-section {
+  padding: 16px;
+  background-color: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  background-image: url('C:\Users\SMILE\Desktop\frondend fit\healthcare\public\image7.jpeg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.anatomy-section {
+  padding: 16px;
+  background-color: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+}
+
+.anatomy-section .anatomy-image {
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  border-radius: 6px;
+  margin-bottom: 16px;
+}
+
+.anatomy-section .health-indicators {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 50px;
+}
+
+.anatomy-section .indicator {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.anatomy-section .indicator-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.anatomy-section .healthy {
+  background-color: #dcfce7;
+  color: #08c84f;
+}
+
+.anatomy-section .healthy .indicator-icon {
+  color: #15803d;
+}
+
+.anatomy-section .warning {
+  background-color: #fef2f2;
+  color: #b91c1c;
+}
+
+.anatomy-section .warning .indicator-icon {
+  color: #b91c1c;
+}

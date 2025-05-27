@@ -1,0 +1,25 @@
+/* src/styles/UpcomingSchedule.css */
+.upcoming-schedule {
+  padding: 16px;
+  background-color: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+}
+
+.upcoming-schedule h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #1f2937;
+  margin-bottom: 16px;
+}
+
+.upcoming-schedule .day-section {
+  margin-bottom: 16px;
+}
+
+.upcoming-schedule .day-section h4 {
+  font-size: 16px;
+  font-weight: 500;
+  color: #4b5563;
+  margin-bottom: 8px;
+}

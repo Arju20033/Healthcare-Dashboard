@@ -1,0 +1,312 @@
+/* src/styles/Dashboardmin.css */
+.dashboard-main {
+  padding: 0 24px 24px;
+  background-color: var(--background-color);
+  flex: 1;
+  overflow-y: auto;
+}
+
+.dashboard-title {
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--text-dark);
+  margin-bottom: 24px;
+}
+
+.dashboard-content {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 24px;
+}
+
+/* Left column - Body model section */
+.body-model-section {
+  background-color: #fff;
+  border-radius: 16px;
+  padding: 24px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  box-shadow: var(--shadow-sm);
+  position: relative;
+  gap: 24px;
+}
+
+.body-model-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  height: 300px;
+}
+
+.body-model {
+  height: 100%;
+  object-fit: contain;
+}
+
+.health-tag {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  color: #fff;
+  font-weight: 500;
+}
+
+.health-tag.heart {
+  background-color: var(--red);
+  top: 80px;
+  left: 40px;
+}
+
+.health-tag.leg {
+  background-color: var(--accent-color);
+  bottom: 80px;
+  left: 30px;
+}
+
+/* Health status bars */
+.health-status-section {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 50%;
+}
+
+.health-status-item {
+  background-color: #fff;
+  border-radius: 16px;
+  padding: 16px;
+  box-shadow: var(--shadow-sm);
+}
+
+.health-status-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.health-status-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 500;
+}
+
+.health-status-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.health-status-date {
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+.progress-bar {
+  height: 8px;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.progress-bar.lungs {
+  background-color: var(--red);
+}
+
+.progress-bar.teeth {
+  background-color: var(--green);
+}
+
+.progress-bar.bone {
+  background-color: var(--orange);
+}
+
+/* Right column - Calendar section */
+.right-column {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.calendar-section {
+  background-color: #fff;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: var(--shadow-sm);
+}
+
+.calendar-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.day-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.day-name {
+  font-size: 14px;
+  color: var(--text-muted);
+  margin-bottom: 4px;
+}
+
+.day-date {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--text-dark);
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.today .day-date {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.calendar-time-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.time-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.time-slot {
+  width: 100%;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  color: var(--text-muted);
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.time-slot.booked {
+  background-color: var(--highlight-bg);
+  color: var(--primary-color);
+  font-weight: 500;
+  border-radius: 4px;
+}
+
+/* Appointment cards */
+.appointment-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.appointment-card {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 16px;
+  border-radius: 16px;
+  color: white;
+}
+
+.appointment-card.dentist {
+  background-color: var(--primary-color);
+}
+
+.appointment-card.physio {
+  background-color: var(--accent-color);
+}
+
+.appointment-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+}
+
+.appointment-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.appointment-title {
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.appointment-doctor {
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+/* Upcoming schedule */
+.upcoming-schedule {
+  margin-top: 32px;
+}
+
+.schedule-title {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 16px;
+}
+
+.schedule-day {
+  margin-top: 16px;
+}
+
+.day-title {
+  font-size: 14px;
+  color: var(--text-muted);
+  margin-bottom: 12px;
+}
+
+.schedule-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.schedule-card {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background-color: #f0f4ff;
+  padding: 12px 16px;
+  border-radius: 16px;
+}
+
+.schedule-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.schedule-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.schedule-name {
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.schedule-time {
+  font-size: 12px;
+  color: var(--text-muted);
+}
