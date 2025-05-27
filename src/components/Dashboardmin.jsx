@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { Calendar, ChevronLeft, ChevronRight, Heart, Smile, Bone as BoneIcon } from 'lucide-react';
-import { IoMdCube, IoIosSearch } from 'react-icons/io';
+// import { IoMdCube, IoIosSearch } from 'react-icons/io';
 import '../styles/Dashboardmin.css';
 import ActivityFeed from './ActivityFeed';
 
@@ -44,8 +44,8 @@ export default function Dashboardmin() {
               <div className="model-3d-wrapper">
                 <img src="/image6.jpeg" alt="3D Human Anatomy" className="body-model-3d" />
                 <div className="model-controls">
-                  <button className="rotate-btn"><IoMdCube /></button>
-                  <button className="zoom-btn"><IoIosSearch /></button>
+                  <button className="rotate-btn">🔄</button>
+                  <button className="zoom-btn">🔍</button>
                 </div>
               </div>
               <div className="health-tag heart">❤️ Healthy Heart</div>
